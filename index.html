@@ -1,11 +1,47 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="logicberlin-collab 的个人博客，记录学习、生活和思考。"><title>logicberlin-collab · 个人博客</title>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="logicberlin-collab 的个人博客，分享学习笔记、开发手记与生活思考。"><title>logicberlin-collab · 个人博客</title>
 <style>
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#faf9f5;color:#273c32;font:16px/1.9 system-ui,-apple-system,sans-serif}.wrap{max-width:920px;margin:auto;padding:0 24px}a{color:inherit;text-decoration:none}a:hover{text-decoration:underline;color:#367354}a:focus-visible,summary:focus-visible{outline:3px solid #367354;outline-offset:5px}header,footer{display:flex;justify-content:space-between;gap:20px;padding:26px 0;border-bottom:1px solid #dedfd5}nav{display:flex;gap:22px}.brand{font-weight:750}.hero{padding:86px 0 64px}.label{color:#367354;font-size:13px;letter-spacing:3px}h1{font-size:clamp(34px,6vw,58px);line-height:1.3;letter-spacing:-1px;margin:20px 0}p{max-width:650px}.intro{color:#68786f;font-size:18px}h2{font-size:22px}.heading{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #dedfd5}.muted,time{color:#68786f;font-size:13px}article{padding:28px 0;border-bottom:1px solid #dedfd5}summary{cursor:pointer;font-size:23px;font-weight:650;margin:12px 0 12px 22px}.excerpt{color:#68786f}.text{max-width:680px;padding-top:12px}.about{background:#eef1e7;padding:30px;border:1px solid #dedfd5;border-radius:12px;margin:60px 0}.about h2{margin:8px 0}.about p{margin-bottom:0}footer{border-top:1px solid #dedfd5;border-bottom:0;font-size:13px;color:#68786f}@media(max-width:520px){header{flex-direction:column;gap:10px}.hero{padding:48px 0}summary{font-size:20px}.about{padding:22px}footer{flex-direction:column}}
+.topics{display:flex;flex-wrap:wrap;gap:10px;padding:18px 0}.topics a{border:1px solid #dedfd5;border-radius:999px;padding:4px 14px;font-size:14px;background:#eef1e7}article{scroll-margin-top:20px}.text h3{font-size:18px;margin:28px 0 10px}code{font-size:.9em;background:#eef1e7;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}.about ul{padding-left:22px}.about li{margin:8px 0}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style></head><body><div class="wrap">
 <header><a class="brand" href="./">logicberlin-collab.</a><nav aria-label="主导航"><a href="#posts">文章</a><a href="#about">关于</a><a href="https://github.com/berlinyang5413-collab">GitHub ↗</a></nav></header>
-<main><section class="hero"><span class="label">记录 · 探索 · 成长</span><h1>把想法写下来，<br>让日子留下痕迹。</h1><p class="intro">欢迎来到我的个人博客。这里记录学习、生活与思考，也收藏那些值得慢慢琢磨的小事。</p></section>
-<section id="posts" aria-labelledby="posts-title"><div class="heading"><h2 id="posts-title">最新文章</h2><span class="muted">01 篇记录</span></div>
-<article><span class="label">随笔</span> <time datetime="2026-10-30">2026.10.30</time><details><summary>你好，世界：博客的第一篇记录</summary><div class="text"><p>欢迎来到 logicberlin-collab 的个人博客。</p><p>这是一个新的起点。这里将用来留下学习过程中的收获、生活中的观察，以及还在慢慢形成的想法。</p><p>写作不必等到一切准备完美。先从一篇短短的记录开始，让每一次思考都有迹可循。</p><p>愿这个小小的空间，能随着时间慢慢生长。</p></div></details><p class="excerpt">从这里开始，记录值得留下的想法。点击标题展开阅读全文。</p></article></section>
-<section id="about" class="about"><span class="label">ABOUT</span><h2>关于这个博客</h2><p>一个安静的个人写作空间。分享所学，记录所想，在持续记录中发现新的可能。</p></section></main>
+<main><section class="hero"><span class="label">记录 · 探索 · 成长</span><h1>把想法写下来，<br>让日子留下痕迹。</h1><p class="intro">从一个小博客开始，记录学到的知识、动手做的改进，以及生活中值得慢慢琢磨的想法。</p></section>
+<section id="posts" aria-labelledby="posts-title"><div class="heading"><h2 id="posts-title">最新文章</h2><span class="muted">04 篇记录</span></div>
+<nav class="topics" aria-label="栏目入口"><a href="#learning-html">学习笔记</a><a href="#building-blog">开发手记</a><a href="#writing-in-public">生活与思考</a></nav>
+<article id="learning-html"><span class="label">学习笔记</span> <time datetime="2026-11-01">2026.11.01</time><details open><summary>从一个静态博客开始：我如何学习 HTML 与页面结构</summary><div class="text">
+<p>学习网页开发，可以从一个自己愿意维护的小页面开始。这个博客就是一个合适的练习对象：内容不多，页面结构完整，修改后的结果也容易观察。眼下的目标很具体——看懂首页的组成，再尝试独立完成一次小修改。</p>
+<h3>先读结构，再看样式</h3>
+<p>阅读首页时，可以先把颜色、字号和间距放到一边。<code>header</code> 放站点名称和导航，<code>main</code> 承载主要内容，<code>section</code> 把文章与关于介绍分开，<code>article</code> 表示一篇独立记录，<code>footer</code> 则放版权与源码入口。这些标签让页面内容有了清晰的组织。</p>
+<p>文章里的 <code>details</code> 和 <code>summary</code> 也值得单独观察：标题既是内容提示，也是展开正文的操作入口。浏览器已经提供了展开和收起的能力，因此这样的小博客可以直接用 HTML 完成基本阅读交互。</p>
+<h3>一次只练习一个问题</h3>
+<p>第一个练习是给文章加上明确的栏目和日期。栏目告诉读者这篇文章属于什么方向，日期说明它在什么时候发布。第二个练习是修改摘要：用一句话说明文章能带来什么，让读者在展开之前就能判断是否感兴趣。</p>
+<p>完成修改后，需要从读者的角度再看一遍：手机上标题会不会挤在一起？键盘能否移动到标题并展开文章？页面上的篇数与实际文章是否一致？这些问题很小，却能帮助我把“写出代码”和“让页面可用”联系起来。</p>
+<h3>给下一次学习留一道题</h3>
+<p>接下来想弄清楚的是：当文章逐渐增多，什么时候应该把正文拆成独立页面？在这之前，先把现有结构读懂，把每一次修改的原因和结果记下来。能解释清楚自己改了什么，就是这一阶段最有用的收获。</p>
+</div></details><p class="excerpt">以这个博客为练习对象，认识页面结构，并给下一次学习留下一个具体问题。</p></article>
+<article id="building-blog"><span class="label">开发手记</span> <time datetime="2026-11-01">2026.11.01</time><details><summary>给个人博客增加栏目：一次小改造记录</summary><div class="text">
+<p>博客有了第一篇记录之后，接下来的问题是：下一篇写什么，以后的文章又该放在哪里？如果每次都从空白开始想主题，更新就很容易停下来。这次首页调整，先为持续写作搭起一个简单的结构。</p>
+<h3>让三个栏目各自回答一个问题</h3>
+<p>“学习笔记”回答学到了什么，适合记录概念、练习与尚未解决的问题；“开发手记”回答做出了什么，重点是目标、修改和结果；“生活与思考”回答经历带来了什么想法，允许保留还在形成中的判断。同一件事可以成为不同栏目的素材，但每篇只抓住一个主要问题。</p>
+<h3>沿用现有的阅读方式</h3>
+<p>这次继续在首页使用 <code>article</code> 包住单篇内容，并用 <code>details</code> 与 <code>summary</code> 展开和收起正文。每篇文章提供栏目、日期、标题和摘要。这样新增文章时，只需要沿用已有的结构，阅读方式也保持一致。</p>
+<p>首页同时增加三个栏目入口，帮助读者快速找到对应记录；“关于”区域说明各栏目的用途。原来的开篇文章保留，并归入“生活与思考”。新文章发布后，页面上的文章总数也需要同步更新，避免界面信息与内容脱节。</p>
+<h3>把发布检查变成固定步骤</h3>
+<p>每次更新前，先检查标题、日期、栏目和摘要，再确认正文没有占位内容。随后在手机与电脑宽度下查看排版，用键盘尝试展开和收起文章。提交之后，还要打开线上地址确认新内容出现；仓库保存成功与线上页面更新，是两个需要分别确认的结果。</p>
+<p>目前的结构适合少量文章。等到首页明显过长，或者需要分享某一篇文章的独立地址时，再考虑拆分页面。下一次开发记录可以围绕这个实际需求展开：如何让每篇文章拥有稳定、清楚的访问入口。</p>
+</div></details><p class="excerpt">从一篇开场白走向三个长期栏目，记录这次首页调整的取舍与发布检查方法。</p></article>
+<article id="writing-in-public"><span class="label">生活与思考</span> <time datetime="2026-11-01">2026.11.01</time><details><summary>为什么我想把学习过程公开记录下来</summary><div class="text">
+<p>第一篇记录里写过一句话：“写作不必等到一切准备完美。”把博客搭起来之后，这句话也成了一个提醒：一个空间能否慢慢生长，取决于接下来是否愿意把具体的想法留下来。</p>
+<h3>写下来，才能重新看见问题</h3>
+<p>学习时，很多概念在阅读的当下似乎已经明白；真正尝试向别人说明，才会发现某一步还说不清楚。记录的价值之一，就在于把这种模糊暴露出来。一篇文章可以只解释一个标签、一次修改，或者一个尚未解决的问题，只要它足够具体。</p>
+<p>公开记录也意味着需要多想一步：读者是否知道事情的背景？有没有把尝试写成了结论？哪些内容已经验证，哪些只是下一步的打算？这些问题能促使我把表达整理得更清楚，也让以后回看时更容易理解当时的判断。</p>
+<h3>允许文章保持小而完整</h3>
+<p>这个博客不必一开始就承担很大的目标。学习笔记可以围绕一个疑问展开，开发手记可以记录一次很小的改动，生活随笔则可以从一个具体观察开始。每篇有一个起点、一段过程和一点收获，就已经值得留下。</p>
+<p>还没有答案的时候，也可以明确写下“不确定”。以后有了新的理解，再回来补充，并标注更新日期。这样，博客里的文章就能保存思考如何变化，而不只是留下某个时刻看起来完整的结论。</p>
+<h3>先约定一个小目标</h3>
+<p>接下来，先尝试每周整理一篇短记录。写之前问自己：这周哪件事值得以后再看？写完后再问：文章有没有说清一个具体问题？如果某周没有完整成果，也可以记下卡住的地方与下一步准备尝试的方法。</p>
+<p>希望这个空间慢慢积累的，是一些能够重新阅读、继续修改的记录。等过一段时间再回头看，也许就能更清楚地知道，自己从哪里开始，又走到了哪里。</p>
+</div></details><p class="excerpt">从第一篇短短的开场白出发，为持续写作设定一个能够做到的小目标。</p></article>
+<article id="hello-world"><span class="label">生活与思考</span> <time datetime="2026-10-30">2026.10.30</time><details><summary>你好，世界：博客的第一篇记录</summary><div class="text"><p>欢迎来到 logicberlin-collab 的个人博客。</p><p>这是一个新的起点。这里将用来留下学习过程中的收获、生活中的观察，以及还在慢慢形成的想法。</p><p>写作不必等到一切准备完美。先从一篇短短的记录开始，让每一次思考都有迹可循。</p><p>愿这个小小的空间，能随着时间慢慢生长。</p></div></details><p class="excerpt">从这里开始，记录值得留下的想法。点击标题展开阅读全文。</p></article></section>
+<section id="about" class="about"><span class="label">ABOUT</span><h2>关于这个博客</h2><p>从学习和动手实践出发，留下能够回看、补充与继续思考的记录。这里有三个长期栏目：</p><ul><li><strong>学习笔记：</strong>记录概念、练习与还没有解决的问题。</li><li><strong>开发手记：</strong>记录项目目标、实现过程与改进结果。</li><li><strong>生活与思考：</strong>记录日常观察，以及慢慢形成的想法。</li></ul><p>先从每周一篇短记录开始，让这个空间慢慢生长。</p></section></main>
 <footer><span>© 2026 logicberlin-collab</span><a href="https://github.com/berlinyang5413-collab/logicberlin-collab.github.io">博客源码 ↗</a></footer></div></body></html>
